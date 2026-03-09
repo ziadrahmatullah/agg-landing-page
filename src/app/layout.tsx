@@ -17,56 +17,83 @@ const inter = Inter({
   display: 'swap',
 });
 
+const BASE_URL = 'https://abdulghaniglobal.com';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: 'Abdul Ghani Global | AI-Powered Software Solutions',
     template: '%s | Abdul Ghani Global',
   },
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo_nobg.png',
+    shortcut: '/logo_nobg.png',
+    apple: '/logo_nobg.png',
   },
   description:
-    'Abdul Ghani Global builds intelligent, AI-powered software solutions and automation tools that solve real-world problems for businesses.',
-  keywords: ['AI software', 'automation', 'n8n', 'WhatsApp automation', 'AI apps', 'software solutions', 'Indonesia'],
-  authors: [{ name: 'Abdul Ghani Global' }],
+    'Abdul Ghani Global membangun solusi software cerdas berbasis AI dan alat otomasi canggih yang menyelesaikan masalah nyata bisnis. Spesialis AI Apps, WhatsApp Blast, n8n workflow automation — berbasis di Indonesia.',
+  keywords: [
+    'Abdul Ghani Global',
+    'software AI Indonesia',
+    'AI-powered apps',
+    'automation tools',
+    'WhatsApp Blast',
+    'n8n automation',
+    'workflow automation',
+    'aplikasi AI',
+    'software solutions Indonesia',
+    'otomasi bisnis',
+    'LLM integration',
+    'Next.js development',
+    'custom software Indonesia',
+  ],
+  authors: [{ name: 'Abdul Ghani Global', url: BASE_URL }],
   creator: 'Abdul Ghani Global',
+  publisher: 'Abdul Ghani Global',
+  alternates: {
+    canonical: BASE_URL,
+  },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://abdulghaniglobal.com',
+    locale: 'id_ID',
+    alternateLocale: 'en_US',
+    url: BASE_URL,
     siteName: 'Abdul Ghani Global',
     title: 'Abdul Ghani Global | AI-Powered Software Solutions',
     description:
-      'Intelligent, AI-powered software solutions and automation tools that solve real-world problems.',
+      'Solusi software cerdas berbasis AI dan otomasi untuk bisnis. Spesialis AI Apps, WhatsApp Blast, n8n workflow automation.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Abdul Ghani Global',
+        alt: 'Abdul Ghani Global — AI-Powered Software Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@abdulghaniglobal',
+    creator: '@abdulghaniglobal',
     title: 'Abdul Ghani Global | AI-Powered Software Solutions',
     description:
-      'Intelligent, AI-powered software solutions and automation tools that solve real-world problems.',
+      'Solusi software cerdas berbasis AI dan otomasi untuk bisnis. Spesialis AI Apps, WhatsApp Blast, n8n automation.',
     images: ['/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
+  category: 'technology',
 };
 
 export default function RootLayout({
