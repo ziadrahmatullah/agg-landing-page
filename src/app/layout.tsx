@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     default: 'Abdul Ghani Global | AI-Powered Software Solutions',
     template: '%s | Abdul Ghani Global',
   },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   description:
     'Abdul Ghani Global builds intelligent, AI-powered software solutions and automation tools that solve real-world problems for businesses.',
   keywords: ['AI software', 'automation', 'n8n', 'WhatsApp automation', 'AI apps', 'software solutions', 'Indonesia'],
