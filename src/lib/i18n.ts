@@ -57,9 +57,9 @@ export const translations = {
         title: 'Our Team',
         subtitle: 'The people behind the innovation',
         members: [
-          { name: 'Abdul Ghani', role: 'Founder & CEO', initials: 'AG' },
-          { name: 'Team Member', role: 'Lead Developer', initials: 'TM' },
-          { name: 'Team Member', role: 'AI Engineer', initials: 'TM' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'Founder & CEO', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'Lead Developer', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'AI Engineer', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
         ],
       },
       values: {
@@ -252,8 +252,8 @@ export const translations = {
       },
       info: {
         title: 'Contact Information',
-        email: 'hello@abdulghaniglobal.com',
-        whatsapp: '+62 812-3456-7890',
+        email: 'info@abdulghaniglobal.com',
+        whatsapp: '+62 896-7383-9774',
         location: 'Indonesia',
       },
       map: 'Our Location',
@@ -324,9 +324,9 @@ export const translations = {
         title: 'Tim Kami',
         subtitle: 'Orang-orang di balik inovasi',
         members: [
-          { name: 'Abdul Ghani', role: 'Pendiri & CEO', initials: 'AG' },
-          { name: 'Anggota Tim', role: 'Lead Developer', initials: 'AT' },
-          { name: 'Anggota Tim', role: 'AI Engineer', initials: 'AT' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'Pendiri & CEO', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'Lead Developer', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
+          { name: 'Muhammad Ziad Rahmatullah S.T', role: 'AI Engineer', initials: 'MZ', photo: '/ceo-ziad.jpeg' },
         ],
       },
       values: {
@@ -519,8 +519,8 @@ export const translations = {
       },
       info: {
         title: 'Informasi Kontak',
-        email: 'hello@abdulghaniglobal.com',
-        whatsapp: '+62 812-3456-7890',
+        email: 'info@abdulghaniglobal.com',
+        whatsapp: '+62 896-7383-9774',
         location: 'Indonesia',
       },
       map: 'Lokasi Kami',

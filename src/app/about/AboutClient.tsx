@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
 import PageHero from '@/components/PageHero';
@@ -158,10 +159,20 @@ export default function AboutClient() {
                 className="bg-[#111111] border border-[#D4AF37]/20 rounded-xl p-6 text-center hover:border-[#D4AF37]/50 transition-colors duration-300"
               >
                 <div
-                  className="w-20 h-20 rounded-full border-2 border-[#D4AF37] bg-[#1A1A1A] flex items-center justify-center mx-auto mb-4 text-[#D4AF37] text-xl font-bold"
+                  className="w-20 h-20 rounded-full border-2 border-[#D4AF37] bg-[#1A1A1A] flex items-center justify-center mx-auto mb-4 text-[#D4AF37] text-xl font-bold overflow-hidden"
                   aria-label={`${member.name} avatar`}
                 >
-                  {member.initials}
+                  {member.photo ? (
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  ) : (
+                    member.initials
+                  )}
                 </div>
                 <h3 className="text-white font-semibold">{member.name}</h3>
                 <p className="text-[#D4AF37] text-sm mt-1">{member.role}</p>
